@@ -7,9 +7,14 @@ def imprimir_nome():
     print('João Paulo')
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
+def imprimir_produto():
+    print(30*27)
 
 #3. Faça um programa que imprima a média aritmética entre os números 5, 8, 12.
-
+def imprimir_media():
+    soma = 5+8+12
+    media = soma/3
+    print(media)
 #4. Faça um programa que leia e imprima um número inteiro.
 
 #5. Faça um programa que leia dois números reais e os imprima.
@@ -85,3 +90,5 @@ def imprimir_nome():
 
 
 imprimir_nome()
+imprimir_produto()
+imprimir_media()
