@@ -30,7 +30,7 @@ def imprimir_reais():
 #   antecessor e o seu sucessor.
 def imprimir_antecessor_sucessor():
     numero = int(input('Número: '))
-    printf(f'Antecessor é {numero-1} e Sucessor é {numero+1}')
+    print(f'Antecessor é {numero-1} e Sucessor é {numero+1}')
   
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
