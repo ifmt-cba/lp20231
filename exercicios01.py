@@ -16,12 +16,22 @@ def imprimir_media():
     media = soma/3
     print(media)
 #4. Faça um programa que leia e imprima um número inteiro.
+def imprimir_inteiro():
+    inteiro = int(input('Número inteiro: '))
+    print(inteiro)
 
 #5. Faça um programa que leia dois números reais e os imprima.
+def imprimir_reais():
+    num1 = float(input('Número 1: '))
+    num2 = float(input('Número 2: '))
+    print(num1, num2)
 
 #6. Faça um programa que leia um número inteiro e imprima o seu
 #   antecessor e o seu sucessor.
-
+def imprimir_antecessor_sucessor():
+    numero = int(input('Número: '))
+    printf(f'Antecessor é {numero-1} e Sucessor é {numero+1}')
+  
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
 
@@ -92,3 +102,6 @@ def imprimir_media():
 imprimir_nome()
 imprimir_produto()
 imprimir_media()
+imprimir_inteiro()
+imprimir_reais()
+imprimir_antecessor_sucessor()
