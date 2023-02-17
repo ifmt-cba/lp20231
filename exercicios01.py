@@ -4,6 +4,9 @@ Exercícios sobre os comandos básicos em python
 
 #1. Faça um programa que imprima o seu nome.
 def imprimir_nome():
+    '''
+    Imprime o nome do autor
+    '''
     print('João Paulo')
 
 #2. Faça um programa que imprima o produto dos valores 30 e 27.
@@ -34,20 +37,46 @@ def imprimir_antecessor_sucessor():
   
 #7. Faça um programa que leia o nome o endereço e o telefone de
 #   um cliente e ao final, imprima esses dados.
+def imprimir_endereco():
+    nome = input('Nome: ')
+    endereco = input('Endereço: ')
+    telefone = input('Telefone: ')
+    print(f'Nome: {nome}')
+    print(f'End.: {endereco}')
+    print(f'Fone: {telefone}')
 
 #8. Faça um programa que leia dois números inteiros e imprima a
 #   subtração deles.
+def subtrair():
+    num1 = int(input('1 - Num.: '))
+    num2 = int(input('2 - Num.: '))
+    print(f'{num1} - {num2} = {num1 - num2}')
 
-#9. Faça um programa que leia umnúmero real e imprima ¼ deste número.
+#9. Faça um programa que leia um número real e imprima ¼ deste número.
+def um_quarto():
+    numero = float(input('Número: '))
+    print(f'¼ de {numero} = {numero/4}')
 
 #10. Faça um programa que leia três números reais e calcule a
 #    média aritmética destes números. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
+def media():
+    num1 = float(input('Num1: '))
+    num2 = float(input('Num2: '))
+    num3 = float(input('Num3: '))
+    print(f'Média: {(num1+num2+num3)/3}')
 
 #11. Faça um programa que leia dois números reais e calcule as
 #    quatro operações básicas entre estes dois números, adição,
 #    subtração,multiplicação e divisão. Ao final, o programa
 #    deve imprimir os resultados dos cálculos.
+def operacoes_basicas():
+    num1 = float(input('Num1: '))
+    num2 = float(input('Num2: '))
+    print(f'{num1} - {num2} = {num1 - num2}')
+    print(f'{num1} + {num2} = {num1 + num2}')
+    print(f'{num1} * {num2} = {num1 * num2}')
+    print(f'{num1} / {num2} = {num1 / num2}')
 
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
