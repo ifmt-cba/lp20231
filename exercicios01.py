@@ -174,23 +174,71 @@ def converter_moeda():
     cambio = float(input('Valor do Câmbio: '))
     print(f'US$ {dolar} = R$ {dolar * cambio}')
 
-imprimir_nome()
-imprimir_produto()
-imprimir_media()
-imprimir_inteiro()
-imprimir_reais()
-imprimir_antecessor_sucessor()
-imprimir_endereco()
-subtrair()
-um_quarto()
-media()
-operacoes_basicas()
-quadrado()
-saldo()
-retangulo()
-desconto_produto()
-reajuste_salarial()
-conversao()
-qtde_litros()
-juros_simples()
-converter_moeda()
+menu = '''
+================================
+            PROGRAMAS
+================================
+[1]  - Nome
+[2]  - Produto
+[3]  - Média
+[4]  - Inteiro
+[5]  - Reais
+[6]  - Antecessor e Sucessor
+[7]  - Endereço
+[8]  - Subtração
+[9]  - 1/4
+[10] - Média
+[11] - Operações Básicas
+[12] - Quadrado
+[13] - Saldo
+[14] - Retângulo
+[15] - Desconto em Produto
+[16] - Reajuste Salarial
+[17] - Conversão
+[18] - Litros Consumidos
+[19] - Juros Simples
+[20] - Converter Moeda
+================================
+'''
+print(menu)
+opcao = int(input('Digite a opção desejada: '))
+if opcao == 1:
+    imprimir_nome()
+if opcao == 2:
+    imprimir_produto()
+if opcao == 3:
+    imprimir_media()
+if opcao == 4:
+    imprimir_inteiro()
+if opcao == 5:
+    imprimir_reais()
+if opcao == 6:
+    imprimir_antecessor_sucessor()
+if opcao == 7:
+    imprimir_endereco()
+if opcao == 8:
+    subtrair()
+if opcao == 9:
+    um_quarto()
+if opcao == 10:
+    media()
+if opcao == 11:
+    operacoes_basicas()
+if opcao == 12:
+    quadrado()
+if opcao == 13:
+    saldo()
+if opcao == 14:
+    retangulo()
+if opcao == 15:
+    desconto_produto()
+if opcao == 16:
+    reajuste_salarial()
+if opcao == 17:
+    conversao()
+if opcao == 18:
+    qtde_litros()
+if opcao == 19:
+    juros_simples()
+if opcao == 20:
+    converter_moeda()
