@@ -81,13 +81,25 @@ def operacoes_basicas():
 #12. Faça um programa que leia um número real e calcule o
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
-
+def quadrado():
+    valor = float(input('Valor: '))
+    print(f'Quadrado de {valor} = {valor ** 2}')
 
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
+def saldo():
+    saldo = float(input('Saldo: '))
+    print(f'Novo saldo: {saldo * 1.02}')
 
 #14. Faça um programa que leia a base e a altura de um retângulo
 #    e imprima o perímetro (base + altura) e a área (base * altura).
+def retangulo():
+    base = float(input('Base: '))
+    altura = float(input('Alura: '))
+    perimetro = base + altura
+    area = base * altura
+    print(f'Perímetro: {perimetro}')
+    print(f'Área: {area}')
 
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
@@ -168,3 +180,17 @@ imprimir_media()
 imprimir_inteiro()
 imprimir_reais()
 imprimir_antecessor_sucessor()
+imprimir_endereco()
+subtrair()
+um_quarto()
+media()
+operacoes_basicas()
+quadrado()
+saldo()
+retangulo()
+desconto_produto()
+reajuste_salarial()
+conversao()
+qtde_litros()
+juros_simples()
+converter_moeda()
