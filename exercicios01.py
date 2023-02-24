@@ -82,6 +82,7 @@ def operacoes_basicas():
 #    quadrado deste número. Ao final, o programa deve
 #    imprimir o resultado do cálculo.
 
+
 #13. Faça um programa que leia o saldo de uma conta poupança e
 #    imprima o novo saldo, considerando um reajuste de 2%.
 
@@ -91,19 +92,35 @@ def operacoes_basicas():
 #15. Faça um programa que leia o valor de um produto, o percentual
 #    do desconto desejado e imprima o valor do desconto e o valor
 #    do produto subtraindo o desconto.
+def desconto_produto():
+    valor = float(input('Valor do produto: '))
+    desconto = int(input('Desconto(%): '))
+    valor_desconto = valor * desconto/100
+    valor_final = valor - valor_desconto
+    print(f'Valor do desconto: {valor_desconto}')
+    print(f'Valor Final do produto: {valor_final}')
 
 #16. Faça um programa que calcule o reajuste do salário de um
 #    funcionário. Para isso, o programa deverá ler o salário atual
 #    do funcionário e ler o percentual de reajuste. Ao final imprimir
 #    o valor do novo salário.
+def reajuste_salarial():
+    salario_atual = float(input('Salário atual: '))
+    perc_reajuste = int(input('Reajuste(%): '))
+    novo_salario = salario_atual * (1 + perc_reajuste/100)
+    print(f'Novo Salário: {novo_salario}')
 
 #17. Faça um programa que calcule a conversão entre graus centígrados
 #    e Fahrenheit. Para isso, leia o valor em centígrados e calcule
 #    com base na fórmula a seguir. Após calcular o programa deve
 #    imprimir o resultado da conversão.
-#    F = (9 x C +160) / 5
+#    F = (9 x C + 160) / 5
+def conversao():
+    centigrados = float(input('Graus Centígrados: '))
+    fahrenheit = (9 * centigrados + 160) / 5
+    print(f'{centigrados}C = {fahrenheit}F')
 
-#18. Faça umprograma que calcule a quantidade de litros de combustível
+#18. Faça um programa que calcule a quantidade de litros de combustível
 #    consumidos em uma viagem, sabendo-se que o carro tem autonomia de
 #    12 km por litro de combustível. O programa deverá ler o tempo
 #    decorrido na viagem e a velocidade média e aplicar as fórmulas:
@@ -115,6 +132,13 @@ def operacoes_basicas():
 #    • L = Litros de combustível consumidos
 #    Ao final, o programa deverá imprimir a distância percorrida e a
 #    quantidade de litros consumidos na viagem.
+def qtde_litros():
+    tempo = int(input('Tempo em minutos: '))
+    vm = int(input('Velocidade média (km/h): '))
+    distancia = tempo/60 * vm
+    litros = distancia / 12
+    print(f'Distância percorrida: {distancia}')
+    print(f'Litros consumidos: {litros}')
 
 #19. Faça um programa que calcule o valor de uma prestação em atraso.
 #    Para isso, o programa deve ler o valor da prestação vencida, a
@@ -122,11 +146,21 @@ def operacoes_basicas():
 #    programa deve imprimir o valor da prestação atrasada, o período
 #    de atraso, os juros que serão cobrados pelo período de atraso, o
 #    valor da prestação acrescido dos juros. Considere juros simples.
+def juros_simples():
+    valor_prestacao = float(input('Valor Prestação: '))
+    taxa_juros = int(input('Taxa de Juros(%): '))
+    dias_atraso = int(input('Qtde de dias atrasado: '))
+    valor_juros = taxa_juros/100 * dias_atraso * valor_prestacao
+    print(f'Valor do juros: R$ {valor_juros}')
+    print(f'Valor Corrigido da Prestação: R$ {valor_prestacao+valor_juros}')
 
 #20. Faça um programa que efetue a apresentação do valor da conversão
 #    em real (R$) de um valor lido em dólar (US$). Para isso, será
 #    necessário também ler o valor da cotação do dólar.
-
+def converter_moeda():
+    dolar = float(input('Dólares: '))
+    cambio = float(input('Valor do Câmbio: '))
+    print(f'US$ {dolar} = R$ {dolar * cambio}')
 
 imprimir_nome()
 imprimir_produto()
