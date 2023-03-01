@@ -194,14 +194,14 @@ menu = '''
 [22] - Consumo Combustível
 [23] - Calorias
 [24] - Emplacamento
-[35] - Intimação
+[25] - Intimação
 ================================
 '''
 print(menu)
 opcao = int(input('Digite a opção desejada: '))
 if opcao == 1:
     questao01()
-if opcao == 1:
+if opcao == 2:
     questao02()
-if opcao == 1:
+if opcao == 5:
     questao05()
