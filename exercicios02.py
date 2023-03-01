@@ -28,15 +28,26 @@ def questao02():
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
+def questao03:
+    numero = int(input('Número: '))
+    if numero % 3 == 0:
+        print('É múltiplo de 3')
+    else:
+        print('Não é múltiplo de 3')
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
+def questao04:
+    numero = int(input('Número: '))
+    if numero % 5 == 0:
+        print('É divisível por 5')
+    else:
+        print('Não é divisível por 5')
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
 def questao05:
     numero = int(input('Número: '))
     if numero % 3 == 0 and numero % 7 == 0:
         print(f'{numero} é divisível por 3 e 7')
-
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
@@ -203,5 +214,9 @@ if opcao == 1:
     questao01()
 if opcao == 2:
     questao02()
+if opcao == 3:
+    questao03()
+if opcao == 4:
+    questao04()
 if opcao == 5:
     questao05()
