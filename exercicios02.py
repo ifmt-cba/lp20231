@@ -8,11 +8,23 @@ TODAY = datetime.now()
 
 #1. Faça um programa que leia dois valores numéricos inteiros e efetue
 #   a adição, caso o resultado seja maior que 10, apresentá-lo.
+def questao01():
+    num1 = int(input('Núm 1: '))
+    num2 = int(input('Núm 2: '))
+    if num1+num2 > 10:
+        print(f'{num1+num2} é maior do que 10!')
 
 #2. Faça um programa que leia dois valores inteiros e efetue a adição.
 #   Caso o valor somado seja maior que 20, este deverá ser apresentado
 #   somando-se a ele mais 8, caso o valor somado seja menor ou igual a
 #   20, este deverá ser apresentado subtraindo-se 5.
+def questao02():
+    num1 = int(input('Núm 1: '))
+    num2 = int(input('Núm 2: '))
+    if num1+num2 > 20:
+        print(num1+num2+8)
+    else:
+        print(num1+num2-5)    
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
@@ -20,6 +32,11 @@ TODAY = datetime.now()
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
+def questao05:
+    numero = int(input('Número: '))
+    if numero % 3 == 0 and numero % 7 == 0:
+        print(f'{numero} é divisível por 3 e 7')
+
 
 #6. A prefeitura do Rio de Janeiro abriu uma linha de crédito para os funcionários
 #   estatutários. O valor máximo da prestação não poderá ultrapassar 30% do salário
@@ -149,3 +166,42 @@ TODAY = datetime.now()
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
 
+menu = '''
+================================
+            PROGRAMAS
+================================
+[1]  - Adição
+[2]  - Adição 2
+[3]  - Múltiplo
+[4]  - Múltiplo 2
+[5]  - Múltiplo 3
+[6]  - Crédito
+[7]  - Intervalo
+[8]  - Menor/Maior
+[9]  - Idade
+[10] - Crescente
+[11] - Maior
+[12] - Idade 2
+[13] - Situação Aluno
+[14] - INSS
+[15] - Valor de Venda
+[16] - Natação
+[17] - Plano de Saúde
+[18] - Mês do Ano
+[19] - Arco e Flecha
+[20] - Crédito Especial
+[21] - Biblioteca
+[22] - Consumo Combustível
+[23] - Calorias
+[24] - Emplacamento
+[35] - Intimação
+================================
+'''
+print(menu)
+opcao = int(input('Digite a opção desejada: '))
+if opcao == 1:
+    questao01()
+if opcao == 1:
+    questao02()
+if opcao == 1:
+    questao05()
