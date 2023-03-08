@@ -28,7 +28,7 @@ def questao02():
 
 #3. Faça um programa que leia um número e imprima uma das duas mensagens:
 #   "É múltiplo de 3"ou "Não é múltiplo de 3".
-def questao03:
+def questao03():
     numero = int(input('Número: '))
     if numero % 3 == 0:
         print('É múltiplo de 3')
@@ -36,7 +36,7 @@ def questao03:
         print('Não é múltiplo de 3')
 
 #4. Faça um programa que leia um número e informe se ele é ou não divisível por 5.
-def questao04:
+def questao04():
     numero = int(input('Número: '))
     if numero % 5 == 0:
         print('É divisível por 5')
@@ -44,7 +44,7 @@ def questao04:
         print('Não é divisível por 5')
 
 #5. Faça um programa que leia um número e informe se ele é divisível por 3 e por 7.
-def questao05:
+def questao05():
     numero = int(input('Número: '))
     if numero % 3 == 0 and numero % 7 == 0:
         print(f'{numero} é divisível por 3 e 7')
@@ -349,7 +349,17 @@ def questao21():
 #22. Construa um programa que leia o percurso em quilômetros, o tipo do carro e
 #informe o consumo estimado de combustível, sabendo-se que um carro tipo A faz
 #12 km com um litro de gasolina, um tipo B faz 9 km e o tipo C 8 km por litro.
-
+def questao22():
+    kms = int(input('kms percorridos: '))
+    tipo_carro = input('Tipo do Carro: ').upper().strip()[0]
+    consumo = 0.0
+    if tipo_carro == 'A':
+        consumo = kms / 12
+    elif tipo_carro == 'B':
+        consumo = kms / 9
+    else:
+        consumo = kms / 8
+    print(f'Consumo: {round(consumo, 1)} litros')
 
 #23. Crie um programa que informe a quantidade total de calorias de uma refeição
 #a partir da escolha do usuário que deverá informar o prato, a sobremesa, e
@@ -359,12 +369,35 @@ def questao21():
 #Peixe 230cal   Sorvete diet 110cal Suco de laranja 70cal
 #Frango 250cal  Mousse diet 170cal  Suco de melão 100cal
 #Carne 350cal   Mousse chocolate 200cal Refrigerante diet 65cal
+def questao23():
+    prato = input('Prato principal: ').strip().upper()
+    bebida = input('Bebida: ').strip().upper()
+    sobremesa = input('Sobremesa: ').strip().upper()
+    calorias = 0
+    calorias += 180 if prato == 'VEGETARIANO' else 0
+    calorias += 230 if prato == 'PEIXE' else 0
+    calorias += 250 if prato == 'FRANGO' else 0
+    calorias += 350 if prato == 'CARNE' else 0
+    calorias += 20 if bebida == 'CHA' else 0
+    calorias += 70 if bebida == 'SUCO DE LARANJA' else 0
+    calorias += 100 if bebida == 'SUCO DE MELAO' else 0
+    calorias += 65 if bebida == 'REFRIGERANTE DIET' else 0
+    calorias += 75 if sobremesa == 'ABACAXI' else 0
+    calorias += 110 if sobremesa == 'SORVETE DIET' else 0
+    calorias += 170 if sobremesa == 'MOUSSE DIET' else 0
+    calorias += 200 if sobremesa == 'MOUSSE DE CHOCOLATE' else 0
+    print(f'Total de calorias: {calorias} cal')
 
 #24. A polícia rodoviária resolveu fazer cumprir a lei e vistoriar veículos para
 #cobrar dos motoristas o DUT. Sabendo-se que o mês em que o emplacamento do
 #carro deve ser renovado é determinado pelo último número da placa do mesmo,
 #faça um programa que, a partir da leitura da placa do carro, informe o mês
 #em que o emplacamento deve ser renovado.
+def questao24():
+    placa = input('Placa: ')
+    mes = int(placa[len(placa) - 1])
+    data = datetime(2022, mes, 1)
+    print(data.strftime('%b'))
 
 #25. A prefeitura contratou uma firma especializada para manter os níveis de
 #poluição considerados ideais para um país do 1º mundo. As indústrias,
@@ -376,6 +409,16 @@ def questao21():
 #0,3 1º grupo
 #0,4 1º e 2º grupos
 #0,5 1º, 2º e 3º grupos
+def questao25():
+    indice = float(input('Índice de Poluição: '))
+    if indice >= 0.5:
+        print('1º, 2º e 3º grupo')
+    elif indice >= 0.4:
+        print('1º e 2º grupo')
+    elif indice >= 0.3:
+        print('1º grupo')
+    else:
+        print('Não receberá intimação')
 
 menu = '''
 ================================
@@ -410,13 +453,28 @@ menu = '''
 '''
 print(menu)
 opcao = int(input('Digite a opção desejada: '))
-if opcao == 1:
-    questao01()
-if opcao == 2:
-    questao02()
-if opcao == 3:
-    questao03()
-if opcao == 4:
-    questao04()
-if opcao == 5:
-    questao05()
+if opcao == 1: questao01()
+if opcao == 2: questao02()
+if opcao == 3: questao03()
+if opcao == 4: questao04()
+if opcao == 5: questao05()
+if opcao == 6: questao06()
+if opcao == 7: questao07()
+if opcao == 8: questao08()
+if opcao == 9: questao09()
+if opcao == 10: questao10()
+if opcao == 11: questao11()
+if opcao == 12: questao12()
+if opcao == 13: questao13()
+if opcao == 14: questao14()
+if opcao == 15: questao15()
+if opcao == 16: questao16()
+if opcao == 17: questao17()
+if opcao == 18: questao18()
+if opcao == 19: questao19()
+if opcao == 20: questao20()
+if opcao == 21: questao21()
+if opcao == 22: questao22()
+if opcao == 23: questao23()
+if opcao == 24: questao24()
+if opcao == 25: questao25()
