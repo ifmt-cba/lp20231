@@ -398,6 +398,7 @@ def questao25():
     else:
         print('Não receberá intimação')
 
+opcao = -1
 menu = '''
 ================================
             PROGRAMAS
@@ -427,32 +428,36 @@ menu = '''
 [23] - Calorias
 [24] - Emplacamento
 [25] - Intimação
+
+[0] - Sair
 ================================
 '''
-print(menu)
-opcao = int(input('Digite a opção desejada: '))
-if opcao == 1: questao01()
-if opcao == 2: questao02()
-if opcao == 3: questao03()
-if opcao == 4: questao04()
-if opcao == 5: questao05()
-if opcao == 6: questao06()
-if opcao == 7: questao07()
-if opcao == 8: questao08()
-if opcao == 9: questao09()
-if opcao == 10: questao10()
-if opcao == 11: questao11()
-if opcao == 12: questao12()
-if opcao == 13: questao13()
-if opcao == 14: questao14()
-if opcao == 15: questao15()
-if opcao == 16: questao16()
-if opcao == 17: questao17()
-if opcao == 18: questao18()
-if opcao == 19: questao19()
-if opcao == 20: questao20()
-if opcao == 21: questao21()
-if opcao == 22: questao22()
-if opcao == 23: questao23()
-if opcao == 24: questao24()
-if opcao == 25: questao25()
+
+while opcao != 0:
+    print(menu)
+    opcao = int(input('Digite a opção desejada: '))
+    if opcao == 1: questao01()
+    if opcao == 2: questao02()
+    if opcao == 3: questao03()
+    if opcao == 4: questao04()
+    if opcao == 5: questao05()
+    if opcao == 6: questao06()
+    if opcao == 7: questao07()
+    if opcao == 8: questao08()
+    if opcao == 9: questao09()
+    if opcao == 10: questao10()
+    if opcao == 11: questao11()
+    if opcao == 12: questao12()
+    if opcao == 13: questao13()
+    if opcao == 14: questao14()
+    if opcao == 15: questao15()
+    if opcao == 16: questao16()
+    if opcao == 17: questao17()
+    if opcao == 18: questao18()
+    if opcao == 19: questao19()
+    if opcao == 20: questao20()
+    if opcao == 21: questao21()
+    if opcao == 22: questao22()
+    if opcao == 23: questao23()
+    if opcao == 24: questao24()
+    if opcao == 25: questao25()
